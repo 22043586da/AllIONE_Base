@@ -1,4 +1,4 @@
-﻿using RequestLibrary;
+﻿using RequestLib;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -17,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.WebRequestMethods;
 
 namespace AllION_Base
 {
@@ -55,7 +56,21 @@ namespace AllION_Base
             {
                 string address = Url;
                 var request = new GetRequest(address);
-                request.Accept = "*/*";
+                request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
+                request.Host = "v2.vost.pw";
+                request.Proxy = new WebProxy("127.0.0.1:8888");
+                request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";
+                request.Referer = $"{address}";
+
+                request.Headers.Add("Accept-Encoding", "gzip, deflate, br");
+                request.Headers.Add("sec-ch-ua", "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\"");
+                request.Headers.Add("sec-ch-ua-mobile", "?0");
+                request.Headers.Add("sec-ch-ua-platform", "\"Windows\"");
+                request.Headers.Add("Sec-Fetch-Dest", "document");
+                request.Headers.Add("Sec-Fetch-Mode", "navigate");
+                request.Headers.Add("Sec-Fetch-Site", "same-origin");
+                request.Headers.Add("Sec-Fetch-User", "?1");
+                request.Headers.Add("Upgrade-Insecure-Requests", "1");
 
             }
 
@@ -67,9 +82,22 @@ namespace AllION_Base
             string address = "https://v2.vost.pw/";
 
             var request = new GetRequest(address);
-            request.Accept = "*/*";
+            request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
             request.Host = "v2.vost.pw";
             request.Proxy = new WebProxy("127.0.0.1:8888");
+            request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";
+            request.Referer = $"{address}";
+
+            request.Headers.Add("Accept-Encoding", "gzip, deflate, br");
+            request.Headers.Add("sec-ch-ua", "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\"");
+            request.Headers.Add("sec-ch-ua-mobile", "?0");
+            request.Headers.Add("sec-ch-ua-platform", "\"Windows\"");
+            request.Headers.Add("Sec-Fetch-Dest", "document");
+            request.Headers.Add("Sec-Fetch-Mode", "navigate");
+            request.Headers.Add("Sec-Fetch-Site", "same-origin");
+            request.Headers.Add("Sec-Fetch-User", "?1");
+            request.Headers.Add("Upgrade-Insecure-Requests", "1");
+
 
             CookieContainer container = new CookieContainer();
 

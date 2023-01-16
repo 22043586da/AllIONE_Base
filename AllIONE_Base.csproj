@@ -95,9 +95,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Library\RequestLibrary.csproj">
-      <Project>{a203150c-35fb-4fa1-abcd-0296bc818b24}</Project>
-      <Name>RequestLibrary</Name>
+    <ProjectReference Include="..\RequestLib\RequestLib.csproj">
+      <Project>{ffe62de3-98fc-4223-9f19-8f0d28f6326d}</Project>
+      <Name>RequestLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

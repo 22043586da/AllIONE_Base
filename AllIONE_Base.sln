@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllIONE_Base", "AllIONE_Base.csproj", "{F9ABEFF6-F275-4106-B941-51A32326E14E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestLibrary", "..\Library\RequestLibrary.csproj", "{A203150C-35FB-4FA1-ABCD-0296BC818B24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestLib", "..\RequestLib\RequestLib.csproj", "{FFE62DE3-98FC-4223-9F19-8F0D28F6326D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F9ABEFF6-F275-4106-B941-51A32326E14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9ABEFF6-F275-4106-B941-51A32326E14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9ABEFF6-F275-4106-B941-51A32326E14E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A203150C-35FB-4FA1-ABCD-0296BC818B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A203150C-35FB-4FA1-ABCD-0296BC818B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A203150C-35FB-4FA1-ABCD-0296BC818B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A203150C-35FB-4FA1-ABCD-0296BC818B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE62DE3-98FC-4223-9F19-8F0D28F6326D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE62DE3-98FC-4223-9F19-8F0D28F6326D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE62DE3-98FC-4223-9F19-8F0D28F6326D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE62DE3-98FC-4223-9F19-8F0D28F6326D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
